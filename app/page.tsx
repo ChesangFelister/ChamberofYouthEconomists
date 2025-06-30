@@ -5,7 +5,7 @@ import type React from "react"
 import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { BarChart2, BookOpen, Calendar, Eye, GraduationCap, LineChart, Target, Users } from "lucide-react"
+import { BarChart2, BookOpen, Calendar, Eye, GraduationCap, LineChart, Target, Users } from 'lucide-react'
 
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
@@ -134,6 +134,11 @@ export default function Home() {
               asChild
               size="xl"
               className="rounded-full px-12 py-6 text-lg font-bold bg-gradient-to-r from-amber-400 to-orange-500 text-slate-900 border border-amber-300 hover:shadow-lg shadow-lg hover:shadow-xl"
+              style={{
+                background: "linear-gradient(90deg, #fbbf24, #f97316)",
+                borderColor: "#fcd34d",
+                color: "#0f172a"
+              }}
             >
               <Link href="/membership">JOIN US</Link>
             </Button>
@@ -176,7 +181,7 @@ export default function Home() {
               shortDescription="Participate in economic research and policy development"
               fullDescription="Contribute to cutting-edge research with real-world impact."
               benefits={["Research opportunities", "Policy drafting", "Data analysis", "Publication support"]}
-              className="bg-emerald-600 text-white hover:bg-emerald-700"
+              className="bg-white text-slate-800 hover:bg-emerald-50"
             />
           </motion.div>
 
@@ -216,11 +221,17 @@ export default function Home() {
       </section>
 
       {/* Philosophy, Mission & Vision Section */}
-      <section className="py-28 bg-gradient-to-r from-emerald-600 to-emerald-700 text-white">
+      <section 
+        className="py-28 bg-gradient-to-r from-emerald-600 to-emerald-700 text-white"
+        style={{ background: "linear-gradient(90deg, #059669, #047857)" }}
+      >
         <div className="mx-auto px-6 md:px-8 max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-5">Philosophy, Mission & Vision</h2>
-            <div className="h-1 w-40 bg-gradient-to-r from-amber-400 to-orange-500 mx-auto rounded-full"></div>
+            <div 
+              className="h-1 w-40 bg-gradient-to-r from-amber-400 to-orange-500 mx-auto rounded-full"
+              style={{ background: "linear-gradient(90deg, #fbbf24, #f97316)" }}
+            ></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -234,8 +245,9 @@ export default function Home() {
                   whileHover={{ rotate: 10, scale: 1.1 }}
                   transition={{ duration: 0.3 }}
                   className="rounded-full bg-amber-400 p-3"
+                  style={{ backgroundColor: "#fbbf24" }}
                 >
-                  <BookOpen className="h-6 w-6 text-emerald-900" />
+                  <BookOpen className="h-6 w-6 text-emerald-900" style={{ color: "#064e3b" }} />
                 </motion.div>
               </div>
               <h3 className="text-xl font-bold mb-4 text-center">Philosophy</h3>
@@ -255,8 +267,9 @@ export default function Home() {
                   whileHover={{ rotate: 10, scale: 1.1 }}
                   transition={{ duration: 0.3 }}
                   className="rounded-full bg-amber-400 p-3"
+                  style={{ backgroundColor: "#fbbf24" }}
                 >
-                  <Target className="h-6 w-6 text-emerald-900" />
+                  <Target className="h-6 w-6 text-emerald-900" style={{ color: "#064e3b" }} />
                 </motion.div>
               </div>
               <h3 className="text-xl font-bold mb-4 text-center">Mission</h3>
@@ -276,8 +289,9 @@ export default function Home() {
                   whileHover={{ rotate: 10, scale: 1.1 }}
                   transition={{ duration: 0.3 }}
                   className="rounded-full bg-amber-400 p-3"
+                  style={{ backgroundColor: "#fbbf24" }}
                 >
-                  <Eye className="h-6 w-6 text-emerald-900" />
+                  <Eye className="h-6 w-6 text-emerald-900" style={{ color: "#064e3b" }} />
                 </motion.div>
               </div>
               <h3 className="text-xl font-bold mb-4 text-center">Vision</h3>
@@ -342,7 +356,10 @@ export default function Home() {
               <h2 className="text-2xl sm:text-3xl font-bold text-emerald-800 mb-2 dark:text-emerald-300">
                 Youth Economists Organization With a Difference.
               </h2>
-              <h3 className="text-xl sm:text-2xl font-bold text-amber-600 mb-4 sm:mb-6 dark:text-amber-400">
+              <h3 
+                className="text-xl sm:text-2xl font-bold text-amber-600 mb-4 sm:mb-6 dark:text-amber-400"
+                style={{ color: "#d97706" }}
+              >
                 Innovation.
               </h3>
               <p className="text-slate-600 mb-6 sm:mb-8 leading-relaxed dark:text-slate-300 text-sm sm:text-base">
@@ -428,7 +445,10 @@ export default function Home() {
       </section>
 
       {/* Services Detail Section */}
-      <section className="py-28 bg-emerald-900 text-white">
+      <section 
+        className="py-28 bg-emerald-900 text-white"
+        style={{ backgroundColor: "#064e3b" }}
+      >
         <div className="mx-auto px-6 md:px-8 max-w-6xl">
           <div className="mb-20 max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-5">Our Services</h2>
@@ -445,7 +465,7 @@ export default function Home() {
               className="border border-white/20 rounded-lg p-6"
             >
               <div className="mb-4">
-                <GraduationCap className="h-10 w-10 text-amber-400" />
+                <GraduationCap className="h-10 w-10 text-amber-400" style={{ color: "#fbbf24" }} />
               </div>
               <h3 className="text-xl font-bold mb-4">EDUCATION</h3>
               <p className="text-white/80 mb-4 leading-relaxed">
@@ -459,7 +479,7 @@ export default function Home() {
               className="border border-white/20 rounded-lg p-6"
             >
               <div className="mb-4">
-                <BarChart2 className="h-10 w-10 text-amber-400" />
+                <BarChart2 className="h-10 w-10 text-amber-400" style={{ color: "#fbbf24" }} />
               </div>
               <h3 className="text-xl font-bold mb-4">POLICY RESEARCH</h3>
               <p className="text-white/80 mb-4 leading-relaxed">
@@ -473,7 +493,7 @@ export default function Home() {
               className="border border-white/20 rounded-lg p-6"
             >
               <div className="mb-4">
-                <Users className="h-10 w-10 text-amber-400" />
+                <Users className="h-10 w-10 text-amber-400" style={{ color: "#fbbf24" }} />
               </div>
               <h3 className="text-xl font-bold mb-4">NETWORKING</h3>
               <p className="text-white/80 mb-4 leading-relaxed">
@@ -487,7 +507,7 @@ export default function Home() {
               className="border border-white/20 rounded-lg p-6"
             >
               <div className="mb-4">
-                <Calendar className="h-10 w-10 text-amber-400" />
+                <Calendar className="h-10 w-10 text-amber-400" style={{ color: "#fbbf24" }} />
               </div>
               <h3 className="text-xl font-bold mb-4">EVENTS</h3>
               <p className="text-white/80 mb-4 leading-relaxed">
@@ -501,7 +521,7 @@ export default function Home() {
               className="border border-white/20 rounded-lg p-6"
             >
               <div className="mb-4">
-                <LineChart className="h-10 w-10 text-amber-400" />
+                <LineChart className="h-10 w-10 text-amber-400" style={{ color: "#fbbf24" }} />
               </div>
               <h3 className="text-xl font-bold mb-4">LEADERSHIP</h3>
               <p className="text-white/80 mb-4 leading-relaxed">
@@ -515,7 +535,7 @@ export default function Home() {
               className="border border-white/20 rounded-lg p-6"
             >
               <div className="mb-4">
-                <BookOpen className="h-10 w-10 text-amber-400" />
+                <BookOpen className="h-10 w-10 text-amber-400" style={{ color: "#fbbf24" }} />
               </div>
               <h3 className="text-xl font-bold mb-4">MENTORSHIP</h3>
               <p className="text-white/80 mb-4 leading-relaxed">
@@ -540,6 +560,11 @@ export default function Home() {
             asChild
             size="xl"
             className="rounded-md px-12 py-7 text-lg font-bold bg-gradient-to-r from-amber-400 to-orange-500 text-slate-900 border border-amber-300 hover:shadow-lg shadow-lg hover:shadow-xl"
+            style={{
+              background: "linear-gradient(90deg, #fbbf24, #f97316)",
+              borderColor: "#fcd34d",
+              color: "#0f172a"
+            }}
           >
             <Link href="/membership">BECOME A MEMBER</Link>
           </Button>
@@ -551,3 +576,4 @@ export default function Home() {
     </main>
   )
 }
+
