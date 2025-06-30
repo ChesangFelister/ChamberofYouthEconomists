@@ -13,7 +13,7 @@ import { Textarea } from "@/components/ui/textarea"
 export default function MembershipPage() {
   return (
     <main className="flex-1">
-      <section className="w-full py-16 md:py-24 lg:py-32 bg-primary-gradient">
+      {/* <section className="w-full py-12 md:py-24 lg:py-32 bg-primary-gradient">
         <div className="mx-auto px-6 md:px-8 max-w-6xl">
           <div className="flex flex-col items-center justify-center space-y-6 text-center">
             <div className="space-y-4 max-w-3xl">
@@ -27,7 +27,7 @@ export default function MembershipPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="w-full py-12 md:py-24 lg:py-32 section-divider-gradient">
         <div className="mx-auto px-6 md:px-8 max-w-6xl">
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">

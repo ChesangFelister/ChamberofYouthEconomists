@@ -9,7 +9,7 @@ export default function AboutPage() {
   return (
     <main className="flex-1">
       {/* Hero Section */}
-      <section className="relative w-full h-[400px] overflow-hidden">
+      {/* <section className="relative w-full h-[400px] overflow-hidden">
         <div
           className="absolute inset-0 bg-gradient-to-r from-emerald-900/90 to-slate-900/80 z-10"
           style={{ background: "linear-gradient(90deg, rgba(6, 78, 59, 0.9), rgba(15, 23, 42, 0.8))" }}
@@ -27,7 +27,7 @@ export default function AboutPage() {
             Learn about our mission, vision, and the team behind the Chamber of Youth Economists
           </p>
         </div>
-      </section>
+      </section> */}
 
       {/* About Section */}
       <section className="py-16 md:py-24">

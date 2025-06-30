@@ -305,7 +305,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-28 bg-slate-50 dark:bg-slate-900">
+      <section className="py-27 bg-slate-50 dark:bg-slate-900">
         <div className="mx-auto px-6 md:px-8 max-w-6xl">
           <h2 className="text-3xl font-bold text-center text-slate-800 mb-5 dark:text-slate-200">Why Choose Us?</h2>
           <p className="text-center text-slate-600 max-w-2xl mx-auto mb-20 text-lg dark:text-slate-300">
@@ -576,4 +576,5 @@ export default function Home() {
     </main>
   )
 }
+
 
