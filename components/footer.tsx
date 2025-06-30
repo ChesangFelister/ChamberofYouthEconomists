@@ -15,7 +15,7 @@ export function Footer() {
             <div className="flex items-center gap-3 mb-3 md:mb-4 xl:mb-6">
               <div className="relative w-8 h-8 md:w-10 md:h-10 xl:w-12 xl:h-12 flex-shrink-0">
                 <Image
-                  src="/placeholder.svg?height=48&width=48"
+                  src="/logo.png"
                   alt="Chamber of Youth Economists Logo"
                   fill
                   className="object-contain"
