@@ -10,13 +10,14 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { PageTransition } from "@/components/page-transition"
 import { TransitionProvider } from "@/components/transition-provider"
 import { NavigationEvents } from "@/components/navigation-events"
+import { Suspense } from "react" // ⬅️ Required for suspense boundary
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Chamber of Youth Economists",
   description: "Empowering young minds in the field of economics",
-    generator: 'v0.dev'
+  generator: "v0.dev",
 }
 
 export default function RootLayout({
@@ -34,7 +35,11 @@ export default function RootLayout({
               <PageTransition>{children}</PageTransition>
               <Footer />
             </div>
-            <NavigationEvents />
+
+            {/* ✅ Wrap client component in Suspense */}
+            <Suspense fallback={null}>
+              <NavigationEvents />
+            </Suspense>
           </TransitionProvider>
         </ThemeProvider>
       </body>
